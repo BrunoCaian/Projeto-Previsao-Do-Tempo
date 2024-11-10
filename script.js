@@ -1,7 +1,6 @@
 const key = "2862413eb1d9c4d5f49401c6ff8bdda0"
 
 function dataScreen(data) {
-    console.log(data)
     const name = document.querySelector('.input_city').value
     
     document.querySelector('.city').innerHTML = "Tempo em " + name
@@ -29,8 +28,14 @@ async function seachCity(city) {
 
        const data = await response.json()
 
+       console.log(data)
+
        if(data.cod !== 200) {
          throw new Error('Cidade não encontrada')
+       }
+
+       if(data.name.toLowerCase() !== city.trim().toLowerCase()) {
+        throw new Error('Cidade não encontrada')
        }
 
        dataScreen(data)
