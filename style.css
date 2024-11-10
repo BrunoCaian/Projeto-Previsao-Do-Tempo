@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("https://images.unsplash.com/photo-1490682143684-14369e18dce8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.title {
+    color: black;
+    position: relative;
+    margin-bottom: 550px;
+}
+
+.big-box {
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.7;
+    padding: 20px;
+    border-radius: 25px;
+    width: 95%;
+    max-width: 450px;
+}
+
+.input_city {
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: calc(100% - 100px);
+    border-radius: 23px;
+    font-size: 20px;
+    background-color: #cec7c72b;
+    color: white;
+}
+
+.btn_busca {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #ffffff5c;
+    float: right;
+    cursor: pointer;
+}
+
+.btn_busca:hover {
+    transition: 0.5s;
+    background-color: #cfcfcf;
+}
+
+.img_busca {
+    width: 20px;
+}
+
+.medium-box {
+    color: white;
+    margin-top: 35px;
+}
+.city{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.temperature {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.small-box {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.climate {
+    color: white;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+.humidity {
+    color: white;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 450px) {
+    .big-box{
+        margin-top: 60px;
+        height: 70vh;
+    }
+
+    .input_city {
+        padding: 20px;
+        width: 230px;
+        font-size: 25px;
+    }
+    .btn_busca {
+        width: 60px;
+        padding: 14px;
+    }
+
+    .city {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    .temperature {
+        font-size: 28px;
+        margin-top: 20px;
+    }
+
+    .climate {
+        font-size: 27px;
+        margin-top: 10px;
+    }
+    .humidity {
+        font-size: 26px;
+        margin-top: 30px;
+    }
+    
+    .title {
+        margin-bottom: 580px;
+    }
+}

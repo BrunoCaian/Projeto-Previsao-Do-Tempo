@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBruno - Previsão do Tempo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1 class="title">Previsão do Tempo</h1>
+    <div class="big-box">
+        <input class="input_city" placeholder="Digite o nome da cidade">
+
+        <button onclick="buttonClick()" class="btn_busca"><img class="img_busca" src="https://www.svgrepo.com/show/488200/find.svg"
+                alt="btn_buscar"></button>
+        <div class="medium-box">
+            <h2 class="city"></h2>
+            <p id="local-time" class="temperature"></p>
+            <p id="temp" class="temperature"></p>
+            <p id="min" class="temperature"></p>
+            <p id="max" class="temperature"></p>
+        </div>
+        <div class="small-box">
+        <img class="img-climate">
+            <p class="climate"></p>
+        </div>
+
+            <p class="humidity"></p>
+    </div>
+</body>
+
+</html>
