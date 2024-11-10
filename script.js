@@ -6,11 +6,11 @@ function dataScreen(data) {
     
     document.querySelector('.city').innerHTML = "Tempo em " + name
     
-    document.querySelector('#temp').innerHTML = 'Temperatura: ' + Math.floor(data.main.temp) + '°C'
+    document.querySelector('#temp').innerHTML = 'Temperatura: ' + Math.round(data.main.temp) + '°C'
 
-    document.querySelector('#min').innerHTML = 'Mínimo: ' + Math.floor(data.main.temp_min) + '°C'
+    document.querySelector('#min').innerHTML = 'Mínimo: ' + Math.round(data.main.temp_min) + '°C'
 
-    document.querySelector('#max').innerHTML = 'Máximo: ' +  Math.floor(data.main.temp_max) + '°C'
+    document.querySelector('#max').innerHTML = 'Máximo: ' +  Math.round(data.main.temp_max) + '°C'
     
     document.querySelector('.climate').innerHTML = data.weather[0].description
     
